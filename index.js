@@ -20,6 +20,10 @@ app.get("/todos", (req, res) => {
 	return res.send(todos);
 })
 
+app.delete("/todos", (req, res) => {
+	return res.send(todos);
+})
+
 app.put("/todos", (req, res) => {
 	const name = req.query.name;
 	const task = new Task(name);
